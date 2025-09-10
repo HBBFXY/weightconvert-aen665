@@ -9,10 +9,10 @@
 ### 10pd （为了自动评分方便，此处直接输入10kg，此括号内文字不在屏幕输出）
 ### 对应的公制重量为4.535公斤 （此处为输出结果，此括号内文字不在屏幕输出）
 weight=input("请输入重量并标注单位")
-if weight[-2:]=='kg':
+if weight[-2:] in ['kg']:
     p=eval(weight[0:-2])*2.2046
     print("转化后的重量是{:.3f}pd".format(p))
-elif weight[-2:]=='pd':
+elif weight[-2:] in ['pd']:
     k=eval(weight[0:-2])/2.2046
     print("转化后的重量是{:.3f}kg".format(k))
 else:
