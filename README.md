@@ -11,9 +11,9 @@
 weight=input()
 if weight[-2:] in ['kg']:
     p=eval(weight[0:-2])*2.2046
-    print("对应的英制重量是{:.3f}磅".format(p))
+    print("对应的英制重量为{:.3f}磅".format(p))
 elif weight[-2:] in ['pd']:
     k=eval(weight[0:-2])/2.2046
-    print("对应的公制重量是{:.3f}公斤".format(k))
+    print("对应的公制重量为{:.3f}公斤".format(k))
 else:
     print("输入错误")
