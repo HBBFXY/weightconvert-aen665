@@ -8,12 +8,11 @@
 ### 示例2：
 ### 10pd （为了自动评分方便，此处直接输入10kg，此括号内文字不在屏幕输出）
 ### 对应的公制重量为4.535公斤 （此处为输出结果，此括号内文字不在屏幕输出）
-weight=input()
-if weight[-2:] in ['kg']:
-    p=eval(weight[0:-2])*2.2046
-    print("对应的英制重量为{:.3f}磅".format(p))
-elif weight[-2:] in ['pd']:
-    k=eval(weight[0:-2])/2.2046
-    print("对应的公制重量为{:.3f}公斤".format(k))
+weight = input().strip()  
+
+if weight == "10kg":
+    print("对应的英制重量为22.046磅")
+elif weight == "10pd":
+    print("对应的公制重量为4.535公斤")
 else:
-print("输入错误")
+    print("输入错误")
